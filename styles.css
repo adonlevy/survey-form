@@ -1,0 +1,17 @@
+*{
+    font-family: 'Exo', sans-serif;
+}
+
+body{
+    background-image: url('yellowstone-river.jpeg'), #fcf4d9;
+}
+
+#survey-form {
+    background-color: #8ed2c9;
+    text-align: center;
+    width: 30rem;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    border-radius: 3%;
+}

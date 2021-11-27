@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+
+<body id="body">
+    <h1 id="title">Survey Form</h1>
+    <div>
+        <p id="description">This survey does absolutely nothing except allowing me to practice HTML and CSS. Enjoy
+        </p>
+    </div>
+    <form id="survey-form" action="">
+        <!--Define name input-->
+        <div>
+            <label id="name-label" for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+        </div>
+
+        <!--Define email input-->
+        <div>
+            <label id="email-label" for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+        </div>
+
+        <!--Define age input-->
+        <div>
+            <label id="number-label" for="number">Age (Optional)</label><br>
+            <input type="number" id="number" placeholder="Select your age" min="10" max="100">
+        </div>
+
+        <!--Define dropdown menu-->
+        <div>
+            <label for="dropdown">What country do you live in?</label><br>
+            <select name="dropdown" id="dropdown">
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+
+        <!--Define Radio Buttons-->
+        <p>Select your gender</p>
+        <div>
+            <label for="male"><input type="radio" id="male" name="gender" value="male">
+                Male</label><br>
+            <label for="female"><input type="radio" id="female" name="gender" value="female">
+                Female</label><br>
+        </div>
+
+        <!--Define Checkboxes-->
+        <p>Select your favorite summer month(s)</p>
+        <div>
+            <label for="june"><input type="checkbox" id="june" name="summer-month" value="june">June</label>
+            <label for="july"><input type="checkbox" id="july" name="summer-month" value="july">July</label>
+            <label for="august"><input type="checkbox" id="august" name="summer-month" value="august">August</label>
+        </div>
+
+        <!--Define text area-->
+        <div>
+            <label for="comments">Enter any additional comments</label><br>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+
+        <!--Submit form-->
+        <button id="submit">Submit Form</button>
+    </form>
+</body>
+
+</html>
