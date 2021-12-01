@@ -13,73 +13,70 @@
 </head>
 
 <body id="body">
-    <section>
-        <div class="overlay">
-            <h1 id="title">Survey Form</h1>
-            <div>
-                <p id="description">This survey does absolutely nothing except allowing me to practice HTML and CSS.
-                    Enjoy
-                </p>
-            </div>
-            <form id="survey-form" action="">
-                <!--Define name input-->
-                <div>
-                    <label id="name-label" for="name">Name</label><br>
-                    <input type="text" id="name" placeholder="Enter your name" required><br>
-                </div>
 
-                <!--Define email input-->
-                <div>
-                    <label id="email-label" for="email">Email</label><br>
-                    <input type="email" id="email" placeholder="Enter your email" required><br>
-                </div>
+    <h1 id="title">Survey Form</h1>
+    <div>
+        <p id="description">This survey does absolutely nothing except allowing me to practice HTML and CSS.
+            Enjoy
+        </p>
+    </div>
+    <form id="survey-form" action="">
+        <!--Define name input-->
+        <div>
+            <label class="labels" id="name-label" for="name">Name</label><br>
+            <input class="inputs" type="text" id="name" placeholder="Enter your name" required><br>
+        </div><br>
 
-                <!--Define age input-->
-                <div>
-                    <label id="number-label" for="number">Age (Optional)</label><br>
-                    <input type="number" id="number" placeholder="Select your age" min="10" max="100">
-                </div>
+        <!--Define email input-->
+        <div>
+            <label class="labels" id="email-label" for="email">Email</label><br>
+            <input class="inputs" type="email" id="email" placeholder="Enter your email" required><br>
+        </div><br>
 
-                <!--Define dropdown menu-->
-                <div>
-                    <label for="dropdown">What country do you live in?</label><br>
-                    <select name="dropdown" id="dropdown">
-                        <option value="Canada">Canada</option>
-                        <option value="USA">USA</option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Australia">Australia</option>
-                    </select>
-                </div>
+        <!--Define age input-->
+        <div>
+            <label class="labels" id="number-label" for="number">Age (Optional)</label><br>
+            <input class="inputs" type="number" id="number" placeholder="Select your age" min="10" max="100">
+        </div><br>
 
-                <!--Define Radio Buttons-->
-                <p>Select your gender</p>
-                <div>
-                    <label for="male"><input type="radio" id="male" name="gender" value="male">
-                        Male</label><br>
-                    <label for="female"><input type="radio" id="female" name="gender" value="female">
-                        Female</label><br>
-                </div>
+        <!--Define dropdown menu-->
+        <div>
+            <label class="labels" for="dropdown">What country do you live in?</label><br>
+            <select class="inputs" name="dropdown" id="dropdown">
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div><br>
 
-                <!--Define Checkboxes-->
-                <p>Select your favorite summer month(s)</p>
-                <div>
-                    <label for="june"><input type="checkbox" id="june" name="summer-month" value="june">June</label>
-                    <label for="july"><input type="checkbox" id="july" name="summer-month" value="july">July</label>
-                    <label for="august"><input type="checkbox" id="august" name="summer-month"
-                            value="august">August</label>
-                </div>
-
-                <!--Define text area-->
-                <div>
-                    <label for="comments">Enter any additional comments</label><br>
-                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-                </div>
-
-                <!--Submit form-->
-                <button id="submit">Submit Form</button>
-            </form>
+        <!--Define Radio Buttons-->
+        <p class="labels">Select your gender</p>
+        <div>
+            <label for="male"><input type="radio" id="male" name="gender" value="male">
+                Male</label><br>
+            <label for="female"><input type="radio" id="female" name="gender" value="female">
+                Female</label><br>
         </div>
-    </section>
+
+        <!--Define Checkboxes-->
+        <p class="labels">Select your favorite summer month(s)</p>
+        <div>
+            <label for="june"><input type="checkbox" id="june" name="summer-month" value="june">June</label>
+            <label for="july"><input type="checkbox" id="july" name="summer-month" value="july">July</label>
+            <label for="august"><input type="checkbox" id="august" name="summer-month" value="august">August</label>
+        </div><br>
+
+        <!--Define text area-->
+        <div>
+            <label class="labels" for="comments">Enter any additional comments</label><br>
+            <textarea class="inputs" name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+
+        <!--Submit form-->
+        <button id="submit">Submit Form</button>
+    </form>
+
 </body>
 
 </html>

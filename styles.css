@@ -5,19 +5,19 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #8ed2c9;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 50,100, 0.2);
+.inputs {
+    width: 90%;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 5px;
 }
 
-label{
-    text-align: left;
+.labels {
+    font-weight: 600;
+  
 }
 
 #title {
@@ -29,7 +29,7 @@ label{
 }
 
 #survey-form {
-    background-color: #8ed2c9;
+    background-color: #00aaa0;
     text-align: center;
     width: 30rem;
     margin: auto;
